@@ -20,6 +20,8 @@ The python files are used for simplifying the notebooks with factored code.
 
 The source data is in the `data` directory. However, building the full dataset with the data engineering notebook would take around 5 hours from experience and require setting up an account with the TMDB API. It is much simpler to use the data in the `prod_movies` directory. This contains the data in that state after running the data engineering notebook.
 
+The API configuration file is only needed if you intend to run `01-data-engineering-pipeline.ipynb` (reminder - 5 hours for the full data!). You could, however, change a clearly named variable in the notebook to only query a sample from the API and check out the raw data for yourself.
+
 See the report for more detail on the project.
 
 ## 3. Data
