@@ -6,19 +6,21 @@ This repository contains the files and code for a submission to Udacity for the 
 1. Motivation
 2. What's in the repo
 3. Data
-4. ML Techniques
-5. Results
-6. Conclusions
-7. Environment Requirements
-8. Licenses
+4. Licenses
 
 ## 1. Motivation
 
-yo yo yo
+This project aims to take data frmo
 
 ## 2. What's in the repo
 
-The repository is structured like so:
+The repository contains several notebooks that encompass the development process. We have the first for data engineering, the second for EDA, two for the local machine learning development and the last for the SageMaker deployment of the model.
+
+The python files are used for simplifying the notebooks with factored code.
+
+The source data is in the `data` directory. However, building the full dataset with the data engineering notebook would take around 5 hours from experience and require setting up an account with the TMDB API. It is much simpler to use the data in the `prod_movies` directory. This contains the data in that state after running the data engineering notebook.
+
+See the report for more detail on the project.
 
 ## 3. Data
 
@@ -29,7 +31,6 @@ The dataset included in this repo was pulled from three distinct sources. These 
 3. [FRED](https://fred.stlouisfed.org/series/) - Federal Reserve of Economic Data - for the macroeconomic data in the US.
 
 
-
-## 8. Licenses
+## 4. Licenses
 
 This product uses the TMDb API but is not endorsed or certified by TMDb.
