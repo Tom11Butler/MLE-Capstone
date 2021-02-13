@@ -103,7 +103,7 @@ def preprocess(df):
         * df['avg_writer_pop']
     )
     df['runtime'].replace(to_replace=0, value=df['runtime'].median(), inplace=True)
-    df = df.query('10000 <= revenue <= 1000000000').copy()
+    df = df.query('10000 <= revenue').copy()
     df = df.query('100000 <= budget').copy()
     df.drop('sum_actor_pop', axis=1, inplace=True)
     df.drop('min_writer_pop', axis=1, inplace=True)
