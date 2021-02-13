@@ -18,7 +18,7 @@ def preprocess(df):
     
     # drop the following columns - irrelevant now
     DROP_COLUMNS = ['id', 'original_title', 'release_date'
-                   , 'tmdbId', 'popularity']
+                   , 'tmdbId', 'popularity', 'year']
     df.drop(DROP_COLUMNS, axis=1, inplace=True)
     
     # drop all of the language columns
